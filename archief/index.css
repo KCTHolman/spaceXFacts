@@ -1,0 +1,17 @@
+.my-row{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 10px;
+}
+.infobox{
+    border:1px grey solid;
+    height: 20vh;
+    align-self: center;
+    justify-self: center;
+    margin:20px;
+    width:200px;
+}
+
+

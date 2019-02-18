@@ -1,0 +1,35 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.my-row{
+    height: 25vh;
+}
+
+.my-box{
+    width:33vw;
+    border:solid 1px grey;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    text-align: center;
+}
+
+.title{
+    width: 70%;
+    border:red 1px solid;
+    height:30%;
+    vertical-align: middle;
+    padding-top:15px;
+}
+
+.content{
+    width:80%;
+    height:70%;
+    border:1px solid blue;
+    align-self: center;
+    vertical-align: middle;
+    align-items: center;
+    padding-top:15px;
+}
