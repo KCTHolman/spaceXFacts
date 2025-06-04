@@ -29,19 +29,19 @@ readTextFile("https://api.spacexdata.com/v3/launches/next", function (text) {
 
  
   function landingPlace(landingVehicle) {
-    if (landingVehicle = "OCISLY") {
+    if (landingVehicle === "OCISLY") {
       document.getElementsByClassName('landing-place')[0].innerHTML = 'On de droneship: of course i still love you';
     }
-    else if (landingVehicle = "JRTI") {
+    else if (landingVehicle === "JRTI") {
       document.getElementsByClassName('landing-place')[0].innerHTML = 'On de droneship: Just Read The Instructions';
     }
-    else if (landingVehicle = "JRTI-1") {
+    else if (landingVehicle === "JRTI-1") {
       document.getElementsByClassName('landing-place')[0].innerHTML = 'On de droneship: Just Read The Instructions';
     }
-    else if (landingVehicle = "LZ-1") {
+    else if (landingVehicle === "LZ-1") {
       document.getElementsByClassName('landing-place')[0].innerHTML = 'Cape Canaveral Air Force Station Landing Zone 1';
     }
-    else if (landingVehicle = "LZ-4") {
+    else if (landingVehicle === "LZ-4") {
       document.getElementsByClassName('landing-place')[0].innerHTML = 'Cape Canaveral Air Force Station Landing Zone 4';
     }
     else {
@@ -82,7 +82,7 @@ readTextFile("https://api.spacexdata.com/v3/launches/next", function (text) {
   showOrbit(orbitSat);
 
   function recoverFristStage(landIntent) {
-    if (landIntent = "true") {
+    if (landIntent === true || landIntent === "true") {
       document.getElementsByClassName('land-intent')[0].innerHTML = 'Yes!';
     }
     else {
@@ -168,7 +168,7 @@ function setTimer(value, htmlElement, totalTime) {
     var timer = setInterval(incrementNumber, millis);
 
     function incrementNumber() {
-      index = index*2;
+      index++;
         placeNumber.innerHTML = index;
         if (index == value) {
             clearInterval(timer);
